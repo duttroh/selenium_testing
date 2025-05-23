@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [groupingsuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="groupingtest(failed)">
+    <groups>
+      <run>
+        <include name="team2"/>
+        <exclude name="team1"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestingUsingTestNG.GroupingMethods">
+        <methods>
+          <include name="search"/>
+          <include name="logIn"/>
+          <include name="logOut"/>
+        </methods>
+      </class> <!-- TestingUsingTestNG.GroupingMethods -->
+    </classes>
+  </test> <!-- groupingtest(failed) -->
+</suite> <!-- Failed suite [groupingsuite] -->

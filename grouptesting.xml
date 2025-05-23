@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="groupingsuite">
+  <test thread-count="5" name="groupingtest">
+  <groups>
+  <run>
+  <include name = "team2"/>
+  <exclude name = "team1"/>
+  </run>
+  </groups>
+    <classes>
+      <class name="TestingUsingTestNG.GroupingMethods"/>
+    </classes>
+  </test> <!-- groupingtest -->
+</suite> <!-- groupingsuite -->
